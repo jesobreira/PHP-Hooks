@@ -562,3 +562,8 @@ if (!class_exists('Hooks')){
 global $hooks;
 $hooks = new Hooks();
 $hooks->do_action('After_Hooks_Setup',$hooks);
+
+function hooks() {
+	global $hooks;
+	return $hooks;
+}
